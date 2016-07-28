@@ -1,4 +1,4 @@
-PRE = resume
+PRE = cv
 
 all: $(PRE).pdf $(PRE).ps
 
@@ -11,7 +11,7 @@ $(PRE).ps: $(PRE).dvi
 $(PRE).dvi: $(PRE).tex
 	latex $(PRE); latex $(PRE)
 clean:
-	rm -f *.log *.aux
+	rm -f *.log *.aux 
 
 fresh: clean
 	rm -f *.ps *.pdf *.dvi
