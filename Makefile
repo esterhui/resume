@@ -11,7 +11,7 @@ $(PRE).ps: $(PRE).dvi
 $(PRE).dvi: $(PRE).tex
 	latex $(PRE); latex $(PRE)
 clean:
-	rm -f *.log *.aux 
+	rm -f *.log *.aux  *.pdf
 
 fresh: clean
 	rm -f *.ps *.pdf *.dvi
